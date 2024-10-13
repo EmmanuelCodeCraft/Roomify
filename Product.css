@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+ #my-header {
+    width:100%;
+    height: 200px;
+    background-color: #203334;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    mix-blend-mode: overlay;
+}
+body{
+    background:url('./images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: scroll;
+}
+.title{
+    text-align: center;
+    font-weight:900;
+    color:#ffffff;
+    font-size:46px;
+}
+ .images{
+    display:flex;
+    flex-wrap:wrap;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    }
+    .images img{
+        width: 30%;
+        height: auto;
+        border-radius: 5px;
+        margin:5px 2px 5px 2px;
+    }
+   footer{
+    background-color: lightgrey;
+    height:250px;
+   }
+   footer .container{
+    display:flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    margin:30px auto;
+   }
+   footer h1{ 
+    font-family: "Martel", Helvetica, Arial, sans-serif;
+    font-size:22px;
+    font-weight:lighter;
+    margin-left: 40px;
+   } 
+   footer p{
+    font-size:18px;
+    color:grey;
+    align-items: center;
+    text-align: center;
+   }
+   .social-media{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+   }
+   .fa-brands{
+    margin:auto 30px;
+   }
+   a{
+    text-decoration: none;
+    color: #203334;
+    transition: color 0.3s ease-in-out;
+    position:absolute;
+    left:46%;
+   }
+   a:hover{
+    color: #ffcc00; 
+   }
+   .a{
+    text-decoration: none;
+    color: #203334;
+    transition: color 0.3s ease-in-out;
+    position:absolute;
+    left:46%;
+   }
+   a, .a{
+    position: relative;
+    top:20px;
+   }
+   .copyright{
+    text-align: center;
+    color: grey;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 0;
+   }
+   
+   @media screen and (max-width:600px) {   
+      .images img{
+        width: 100%;
+       }
+       
+       footer h1, h2, h3, h4, h5{
+        font-size:18px;
+        justify-content: center;
+       }
+       footer p{
+        font-size:14px;
+        justify-content: center;
+       }
+   }
